@@ -11,7 +11,7 @@ The julia folder contains 8 files:
 Each julia script must be run individually to produce the relevant figures.
 
 ## Contact
-For any feeback, please contact:
+For any feedback, please contact:
  - Stephane at sbonhomme@uchicago.edu
  - Kevin at kdano@berkeley.edu
  - Bryan at bryangraham@berkeley.edu
