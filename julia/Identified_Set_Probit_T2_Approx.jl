@@ -16,10 +16,6 @@ using LinearAlgebra
 using JuMP
 using Clp
 
-#Path to save figures (to specify depending on the user)
-path_figures =""
-
-
 ########################################################################
 # Functions
 ########################################################################

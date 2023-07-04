@@ -16,9 +16,6 @@ using LinearAlgebra
 using JuMP
 using Clp
 
-#Path to save figures (to specify depending on the user)
-path_figures =""
-
 ########################################################################
 # Functions
 ########################################################################
@@ -128,7 +125,6 @@ APE_set_max_upper_bound_approx500 = zeros(N_theta), APE_set_min_lower_bound_appr
 #1) True identified set where we know the support points of the heterogeneity distribution
 
 for (index,theta_true) in enumerate(theta_true_grid)
-        println("Theta true : ",theta_true)
 
         #Vector of true probabilities
         H = true_probabilities(theta_true,alpha_grid,pi_alpha)
@@ -248,8 +244,6 @@ for K_approx in [5,50,500]
         APE_set_min_approx =[] #collects all lower bounds on APE for each theta in the approximated identified set
 
         for theta in theta_grid
-
-        println("Theta true : ",theta_true," with K_approx = ", K_approx," and theta = ", theta)
 
         m = Model(Clp.Optimizer) #set up optimization and sets solver
         set_optimizer_attribute(m,"SolveType",1)

@@ -14,10 +14,6 @@ using LinearAlgebra
 using JuMP
 using Clp
 
-#Path to save figures (to specify depending on the user)
-path_figures =""
-
-
 ########################################################################
 # Functions
 ########################################################################
@@ -122,7 +118,6 @@ APE_set_max_upper_bound_SE = zeros(N_theta), APE_set_min_lower_bound_SE =  zeros
 
 #### Predetermined case
 for (index,theta_true) in enumerate(theta_true_grid)
-        println("Theta true : ",theta_true)
 
 #Vector of true probabilities
 H = true_probabilities(theta_true,alpha_grid,pi_alpha)
@@ -245,7 +240,6 @@ end
 
 #### Strictly exogenous case
 for (index,theta_true) in enumerate(theta_true_grid)
-        println("Theta true : ",theta_true)
 
 #Vector of true probabilities
 H = true_probabilities(theta_true,alpha_grid,pi_alpha)

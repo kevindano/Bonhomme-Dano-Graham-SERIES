@@ -4,11 +4,10 @@ This repository contains the replication code for "Identification in a Binary Ch
 ## Replication instructions
 To run the code and replicate our results you must have installed [Julia version 1.5.3](https://julialang.org/downloads/oldreleases/).
 
-The julia folder contains 8 files:
+The julia folder contains 9 files:
  - `Identified_Set_Logit_T2.jl`,`Identified_Set_Logit_T3.jl`,`Identified_Set_Logit_T4.jl`,`Identified_Set_Probit_T2.jl`,`Identified_Set_Probit_T3.jl`,`Identified_Set_Probit_T4.jl` replicate Figure 1 and Figure 2 in the main text.
  - `Identified_Set_Logit_T2_Approx.jl`,`Identified_Set_Probit_T2_Approx.jl` replicate Appendix Figure 1 and Appendix Figure 2.
-
-Each julia script must be run individually to produce the relevant figures.
+ - `Masterfile.jl` installs all necessary packages and can be used to run all aforementioned scripts and produce the relevant figures.
 
 ## Contact
 For any feedback, please contact:
