@@ -10,7 +10,7 @@
 using Pkg
 
 # Install all relevant packages
-for package in ["Distributions", "Random", "DataFrames", "Gadfly", "Cairo", "Fontconfig", "LinearAlgebra", "JuMP", "Clp",]
+for package in ["Distributions", "Random", "DataFrames", "Gadfly", "Cairo", "Fontconfig", "LinearAlgebra", "JuMP", "Clp"]
     Pkg.add(package)
 end
 
