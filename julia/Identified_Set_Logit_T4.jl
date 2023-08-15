@@ -142,6 +142,8 @@ for theta in theta_grid
         m = Model(Clp.Optimizer) #set up optimization and sets solver
         set_optimizer_attribute(m,"SolveType",1)
         set_time_limit_sec(m, 60.0) # maximum search time of 60s
+        set_optimizer_attribute(m,"PrimalTolerance", 10^(-11))
+        set_optimizer_attribute(m,"DualTolerance", 10^(-11))
         set_silent(m) #prevent solver from showing all outputs
 
         #1) Declare variables
@@ -290,6 +292,8 @@ for theta in theta_grid
         m_SE = Model(Clp.Optimizer) #set up optimization and sets solver
         set_optimizer_attribute(m_SE,"SolveType",1)
         set_time_limit_sec(m_SE, 60.0) # maximum search time of 60s
+        set_optimizer_attribute(m_SE,"PrimalTolerance", 10^(-11))
+        set_optimizer_attribute(m_SE,"DualTolerance", 10^(-11))
         set_silent(m_SE) #prevent solver from showing all outputs
 
         #1) Declare variables
